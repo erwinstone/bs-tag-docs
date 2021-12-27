@@ -1,0 +1,9 @@
+<!-- Using data-bst-separator attribute: -->
+<input type="text" class="form-control" value="red green blue" data-bst-separator=" ">
+
+<!-- Or using option: -->
+<script>
+	new BsTag(document.querySelector('input'), {
+		separator: ' '
+	})
+</script>

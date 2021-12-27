@@ -1,0 +1,9 @@
+<!-- Using data-bst-transform attribute: -->
+<input type="text" class="form-control" value="RED,GREEN,BLUE" data-bst-transform="input => input.toUpperCase()">
+
+<!-- Or using option: -->
+<script>
+	new BsTag(document.querySelector('input'), {
+		transform: 'input => input.toUpperCase()'
+	})
+</script>

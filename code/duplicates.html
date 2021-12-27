@@ -1,0 +1,9 @@
+<!-- Using data-bst-duplicate attribute: -->
+<input type="text" class="form-control" value="red,red,green,green,blue" data-bst-duplicate>
+
+<!-- Or using option: -->
+<script>
+	new BsTag(document.querySelector('input'), {
+		duplicate: true
+	})
+</script>

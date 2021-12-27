@@ -1,0 +1,9 @@
+<!-- Using data-bst-enter attribute: -->
+<input type="text" class="form-control" value="red,green,blue" data-bst-enter placeholder="Add a color... (then press comma or enter)">
+
+<!-- Or using option: -->
+<script>
+	new BsTag(document.querySelector('input'), {
+		enter: true
+	})
+</script>

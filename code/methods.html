@@ -1,0 +1,30 @@
+<input type="text" class="form-control" id="example" value="red,green,blue">
+
+<button class="btn btn-sm btn-light" type="button" id="addValue">addValue('cyan')</button>
+<button class="btn btn-sm btn-light" type="button" id="addValues">addValue(['light', 'dark'])</button>
+<button class="btn btn-sm btn-light" type="button" id="removeValue">removeValue('cyan')</button>
+<button class="btn btn-sm btn-light" type="button" id="removeValues">removeValue(['light', 'dark'])</button>
+<button class="btn btn-sm btn-light" type="button" id="getValue">getValue()</button>
+<button class="btn btn-sm btn-light" type="button" id="getValues">getValues()</button>
+
+<script>
+	const example = new BsTag(document.getElementById('example'))
+	document.getElementById('addValue').addEventListener('click', () => {
+		example.addValue('cyan')
+	})
+	document.getElementById('addValues').addEventListener('click', () => {
+		example.addValue(['light', 'dark'])
+	})
+	document.getElementById('removeValue').addEventListener('click', () => {
+		example.removeValue('cyan')
+	})
+	document.getElementById('removeValues').addEventListener('click', () => {
+		example.removeValue(['light', 'dark'])
+	})
+	document.getElementById('getValue').addEventListener('click', () => {
+		alert(example.getValue())
+	})
+	document.getElementById('getValues').addEventListener('click', () => {
+		alert(JSON.stringify(example.getValues()))
+	})
+</script>
